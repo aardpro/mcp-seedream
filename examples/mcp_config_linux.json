@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "UniversalImageGenerator": {
+      "command": "python",
+      "args": [
+        "-m",
+        "docreader"
+      ]
+    }
+  }
+}

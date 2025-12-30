@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "UniversalImageGenerator": {
+      "command": "uvx",
+      "args": [
+        "mcp-universal-image-generator"
+      ]
+    }
+  }
+}

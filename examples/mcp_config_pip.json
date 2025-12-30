@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "UniversalImageGenerator": {
+      "command": "mcp-universal-image-generator"
+    }
+  }
+}

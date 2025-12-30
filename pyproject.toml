@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-seedream"
+version = "1.0.0"
+description = "MCP server for Doubao image generation - generates images from text prompts using Doubao's API"
+
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "aardpro", email = "chileehong@outlook.com" }
+]
+keywords = ["mcp", "image-generation", "text-to-image", "ai", "api", "doubao", "mcp-seedream"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "openai>=1.3.7",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/aardpro/mcp-seedream"
+Repository = "https://github.com/aardpro/mcp-seedream"
+Issues = "https://github.com/aardpro/mcp-seedream/issues"
+
+[project.scripts]
+mcp-seedream = "main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/main"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/main",
+    "README.md",
+    "LICENSE",
+]

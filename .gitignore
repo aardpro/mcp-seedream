@@ -44,3 +44,8 @@ mcp_debug.log
 # Local configuration (do not commit)
 mcp_config.json
 start_server.bat
+
+# Generated images and test scripts
+images/
+test_image_generation.py
+test_image_generation_correct.py

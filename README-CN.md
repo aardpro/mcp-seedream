@@ -40,7 +40,9 @@ pip install -e .
 
 ### 选项 1: 使用 uvx 和环境变量（必需配置）
 
-你必须使用环境变量配置 API 设置。这些将在服务器启动时用作初始值：
+你必须使用 MCP 配置中的 `environment` 字段（或根据你的 MCP 客户端实现使用 `env`）来传递环境变量给服务器。这些将在服务器启动时用作初始值：
+
+**注意：** 某些 MCP 客户端可能需要使用 `env` 而不是 `environment`。请检查你的 MCP 客户端文档以确认支持哪个字段名。
 
 ```json
 {
@@ -59,7 +61,7 @@ pip install -e .
 }
 ```
 
-### 选项 2: 使用 pip 安装的命令和环境变量
+### 选项 2: 使用 pip 安装的命令和 `environment` (或 `env`) 字段
 
 ```json
 {
@@ -79,7 +81,7 @@ pip install -e .
 
 ### 选项 3: Windows 系统 (支持中文路径)
 
-对于 Windows 系统，为确保正常功能：
+对于 Windows 系统，为确保正常功能，使用 MCP 配置中的 `environment` 字段（或根据你的 MCP 客户端实现使用 `env`）来传递环境变量给服务器：
 
 ```json
 {
@@ -102,6 +104,8 @@ pip install -e .
 ```
 
 ### 选项 4: Linux/macOS 使用 Python 模块
+
+使用 MCP 配置中的 `environment` 字段（或根据你的 MCP 客户端实现使用 `env`）来传递环境变量给服务器：
 
 ```json
 {

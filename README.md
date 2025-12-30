@@ -40,7 +40,9 @@ Add the following to your MCP client configuration (e.g., Claude Desktop, Cursor
 
 ### Option 1: Using uvx with environment variables (Required Configuration)
 
-You must configure the API settings using environment variables in your MCP configuration. ARK_API_KEY is required for authentication. These will be used as the initial values when the server starts:
+You must configure the API settings using the `environment` field (or `env` depending on your MCP client implementation) in your MCP configuration to pass environment variables to the server. ARK_API_KEY is required for authentication. These will be used as the initial values when the server starts:
+
+**Note:** Some MCP clients may require `env` instead of `environment`. Please check your MCP client documentation to confirm which field name is supported.
 
 ```json
 {
@@ -59,7 +61,7 @@ You must configure the API settings using environment variables in your MCP conf
 }
 ```
 
-### Option 2: Using pip-installed command with environment variables
+### Option 2: Using pip-installed command with `environment` (or `env`) field
 
 ```json
 {
@@ -79,7 +81,7 @@ You must configure the API settings using environment variables in your MCP conf
 
 ### Option 3: Windows with Unicode Support
 
-For Windows systems, to ensure proper functionality:
+For Windows systems, to ensure proper functionality, use the `environment` field (or `env` depending on your MCP client implementation) in your MCP configuration:
 
 ```json
 {
@@ -102,6 +104,8 @@ For Windows systems, to ensure proper functionality:
 ```
 
 ### Option 4: Linux/macOS with Python module
+
+Use the `environment` field (or `env` depending on your MCP client implementation) in your MCP configuration:
 
 ```json
 {

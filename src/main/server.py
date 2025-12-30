@@ -170,12 +170,12 @@ async def handle_call_tool(
             api_key = config["api_key"]
             
             if not api_url:
-                raise ValueError("API URL not configured. Use set_config tool first.")
+                raise ValueError("API URL not configured. Required: ARK_API_URL environment variable. Use set_config tool first if environment variables are not set.")
             # Ensure the API URL is the supported API since that's the only supported API
             if "ark.cn-beijing.volces.com" not in api_url and "doubao" not in api_url.lower() and "api.openai.com" not in api_url:
                 raise ValueError("Only Doubao API or OpenAI API is supported in this version")
             if not api_key:
-                raise ValueError("API key not configured. Use set_config tool first.")
+                raise ValueError("API key not configured. Required: ARK_API_KEY environment variable. Use set_config tool first if environment variables are not set.")
             
             # Prepare the request for a generic image generation API
             headers = {

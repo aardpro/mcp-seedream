@@ -173,6 +173,11 @@ pytest
 
 ### 构建包
 
+build && upload
+```bash
+pip install build && python -m build && pip install twine && twine upload dist/*
+```
+
 ```bash
 pip install build
 python -m build

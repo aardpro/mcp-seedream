@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mcp-seedream"
-version = "1.1.7"
+version = "1.1.8"
 description = "MCP server for Doubao image generation - generates images from text prompts using Doubao's API"
 
 readme = "README.md"

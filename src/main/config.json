@@ -1,0 +1,9 @@
+{
+  "api_url": "https://ark.cn-beijing.volces.com/api/v3/images/generations",
+  "default_model": "doubao-seedream-4-5-251128",
+  "minio_host": "175.178.248.52",
+  "minio_port": "9000",
+  "minio_user": "admin",
+  "minio_password": "mmmpass888",
+  "minio_bucket": "ai-images"
+}

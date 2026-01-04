@@ -25,6 +25,7 @@ venv/
 ENV/
 env/
 .venv/
+scripts/
 
 # IDE
 .idea/
@@ -46,6 +47,5 @@ mcp_config.json
 start_server.bat
 
 # Generated images and test scripts
-images/
+output/
 test_image_generation.py
-test_image_generation_correct.py
